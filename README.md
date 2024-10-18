@@ -1,4 +1,4 @@
-# WebAppMVC
+# E-commerce Web Application
 Esto es el repositorio para ingeniera de la calidad. En este realizamos una pagina web e-commerce para las necesidades de dicho curso
 
 # Tecnologia usada
