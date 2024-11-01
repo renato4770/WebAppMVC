@@ -2,9 +2,10 @@
 <li>
     <figure>
         <a class="aa-product-img" href="@Url.Action("ViewDetails", "Product1", new { id = Model.ProductID })">
-            <img src="@Url.Content(Model.PicturePath)" alt="" class="img-fluid img-thumbnail" >
+            <img src="@Url.Content(Model.PicturePath)" alt="" class="img-fluid img-thumbnail">
         </a>
-        <a class="aa-add-card-btn" href="@(Session["username"] != null ? Url.Action("AddToCart", "Product1", new { id = @Model.ProductID}) : Url.Action("Login", "Account"))"><span class="fa fa-shopping-cart"></span>Agregar al Carrito</a>
+        @*<a class="aa-add-card-btn" href="@(Session["username"] != null ? Url.Action("AddToCart", "Product1", new { id = @Model.ProductID}) : Url.Action("Login", "Account"))"><span class="fa fa-shopping-cart"></span>Agregar al carrito</a>*@
+          @*<a class="aa-add-card-btn" href="@(Session["username"] != null ? Url.Action("AddToCart", "Product1", new { id=Model.ProductID}) : Url.Action("Login", "Account"))">Agregar al carrito</a> }*@
         <figcaption>
             <h4 class="aa-product-title"><a href="#">@Model.Name</a></h4>
             <span class="aa-product-price">$. @Model.UnitPrice</span><span class="aa-product-old-price">
